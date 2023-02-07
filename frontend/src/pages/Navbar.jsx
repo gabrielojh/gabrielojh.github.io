@@ -25,11 +25,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     return (
         <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4 transition duration-500`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
-                <h4 className="font-playfair text-3xl font-bold">{'{'}GO{'}'}</h4>
+                <h4 className="font-playfair text-3xl font-bold ml-1 md:ml-0">{'{'}GO{'}'}</h4>
 
                 {/* DESKTOP NAV */}
                 {isAboveSmallScreens ? (
-                    <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+                    <div className="flex justify-between gap-16 font-opensans text-sm font-semibold mx-4">
                         <Link 
                             page="Home"
                             selectedPage={selectedPage}
@@ -52,18 +52,18 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         />
                     </div>
                 ) : (
-                    <button className="rounded-full bg-red p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                        <img alt="menu-icon" src="../assets/menu-icon.svg" />
+                    <button className="rounded-full bg-red p-2 mr-4" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                        <img alt="menu-icon" src="/portfolio/assets/menu-icon.svg" />
                     </button>
                 )}
 
                 {/* MOBILE MENU POPUP */}
                 {!isAboveSmallScreens && isMenuToggled && (
-                    <div className="fixed right-0 bottom-0 h-full bg-yellow w-[200px]">
+                    <div className="fixed right-0 bottom-0 h-full bg-light-grey w-[200px]">
                         {/* CLOSE ICON */}
                         <div className="flex justify-end p-12">
                             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                                <img alt="close-icon" src="../assets/close-icon.svg" />
+                                <img alt="close-icon" src="/portfolio/assets/close-icon.svg" />
                             </button>
                         </div>
 

@@ -6,7 +6,7 @@ const tabsData = [
     label: "Plant&Go",
     content:
       "Plant&Go is a mobile application that encourages the pursuit of a sustainable diet. Through this application, users are able to see and order from a list of participating restaurants that are pursuing greener alternatives in food.",
-    img: "/assets/plantngo-logo.png",
+    img: "/portfolio/assets/plantngo-logo.png",
     alt: "plantngoIcon",
     link: "https://github.com/plantngo/plantngo_backend",
   },
@@ -14,7 +14,7 @@ const tabsData = [
     label: "WiFi Tracker",
     content:
       "Wifi Tracker is a Java application that approximates the location of a person based on a trilateration algorithm. This algorithm takes in the signal strength of the person to all available routers in range and then generates the approximate position.",
-    img: "/assets/wifiTracker.png",
+    img: "/portfolio/assets/wifiTracker.png",
     alt: "wifiTrackerIcon",
     link: "https://github.com/hongyao38/WiFi_Tracker",
   },
@@ -86,12 +86,12 @@ const Projects = () => {
           <img
             alt={tabsData[activeTabIndex].alt}
             src={tabsData[activeTabIndex].img}
-            className="max-w-[500px] mx-5"
+            className="md:max-w-[500px] md:mx-5 max-w-[200px] mx-auto"
           />
-          <div className="md:flex md:flex-col">
-            <p className="mt-4 md:mt-0">{tabsData[activeTabIndex].content}</p>
+          <div className="md:flex md:flex-col text-center md:text-left">
+            <p className="my-4 md:mt-0">{tabsData[activeTabIndex].content}</p>
             <a
-              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 transition duration-500 mt-10"
+              className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 transition duration-500 mt-2 md:mt-6"
               href={tabsData[activeTabIndex].link}
               target="_blank"
               rel="noreferrer"

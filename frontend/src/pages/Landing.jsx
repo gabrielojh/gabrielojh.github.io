@@ -10,7 +10,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-between md:items-center md:h-full gap-12 py-10"
     >
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
             }}
           >
             <div
-              className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 
+              className="relative z-0 ml-20 before:absolute before:-top-12 before:-left-12
                             before:rounded-full before:w-full before:h-full
                             before:border-2 before:border-red before:z-[-1]"
             >
@@ -65,7 +65,7 @@ const Landing = ({ setSelectedPage }) => {
             Gabriel {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush 
-                            before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+                            before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1] "
             >
               Ong
             </span>

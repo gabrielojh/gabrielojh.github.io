@@ -60,7 +60,7 @@ const Contact = () => {
           <p className="font-playfair font-semibold text-4xl text-yellow">
             CONTACT ME
           </p>
-          <div className="flex md:justify-end my-5">
+          <div className="flex justify-end my-5">
             <LineGradient width="w-1/2" />
           </div>
         </div>
@@ -81,7 +81,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="/assets/contact-image.jpeg" alt="contact" className="max-h-[600px]"/>
+          <img src="/portfolio/assets/contact-image.jpeg" alt="contact" className="max-h-[400px] sm:max-h-[600px]"/>
         </motion.div>
 
         {/* FORM */}

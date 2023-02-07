@@ -46,7 +46,7 @@ const MySkills = () => {
           <h2 className="font-playfair xs:font-semibold text-3xl md:text-7xl text-center underline decoration-2 underline-offset-4">
             MY <span className="text-red ">SKILLS</span>
           </h2>
-          <p className="font-opensans text-center mt-8 mx-40 text-md">
+          <p className="font-opensans text-center mt-8 mx-auto md:mx-40 md:text-md">
             Through the projects and modules I have taken in University, I have
             used several coding languages and frameworks. However, I am
             constantly seeking opportunities to learn new technologies and
